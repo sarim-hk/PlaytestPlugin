@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaytestPlugin", "PlaytestPlugin\PlaytestPlugin.csproj", "{B0D40538-3995-43E4-AA5E-E81504D7E1BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D40538-3995-43E4-AA5E-E81504D7E1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D40538-3995-43E4-AA5E-E81504D7E1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D40538-3995-43E4-AA5E-E81504D7E1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D40538-3995-43E4-AA5E-E81504D7E1BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09A621B6-2417-4A24-BB29-83C23D6546B7}
+	EndGlobalSection
+EndGlobal
