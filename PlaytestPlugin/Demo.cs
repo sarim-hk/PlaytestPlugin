@@ -7,6 +7,8 @@ namespace PlaytestPlugin
 {
     public partial class PlaytestPlugin
     {
+        public bool isDemoRecording = false;
+
         public void StartDemo()
         {
             string demoDirectoryPath = Path.GetDirectoryName(Path.Join(Server.GameDirectory + "/csgo/", "PlaytestPlugin"));

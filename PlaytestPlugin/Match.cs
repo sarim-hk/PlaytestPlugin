@@ -8,7 +8,6 @@ namespace PlaytestPlugin
 {
     public partial class PlaytestPlugin
     {
-        public bool isDemoRecording = false;
         public bool isMatchStarted = false;
 
         [ConsoleCommand("pp_start_match", "Start a match.")]
