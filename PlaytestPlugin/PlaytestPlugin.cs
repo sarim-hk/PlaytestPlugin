@@ -9,6 +9,8 @@ namespace PlaytestPlugin
 
         public override void Load(bool hotReload)
         {
+            RegisterEventHandler<EventCsWinPanelMatch>(EventCsWinPanelMatchHandler);
+
             Console.WriteLine("[PlaytestPlugin] Hello World!");
         }
     }
