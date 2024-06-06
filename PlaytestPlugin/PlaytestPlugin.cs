@@ -1,4 +1,6 @@
-﻿using CounterStrikeSharp.API.Core;
+﻿using CounterStrikeSharp.API;
+using CounterStrikeSharp.API.Core;
+using Microsoft.Extensions.Logging;
 
 namespace PlaytestPlugin
 {
@@ -9,9 +11,12 @@ namespace PlaytestPlugin
 
         public override void Load(bool hotReload)
         {
+            Server.ExecuteCommand($"exec PlaytestPlugin/config.cfg");
+            Server.ExecuteCommand($"exec PlaytestPlugin/config_dev.cfg");
+
             RegisterEventHandler<EventCsWinPanelMatch>(EventCsWinPanelMatchHandler);
 
-            Console.WriteLine("[PlaytestPlugin] Hello World!");
+            Logger.LogInformation("[PlaytestPlugin] Plugin loaded!");
         }
     }
 

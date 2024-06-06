@@ -3,6 +3,7 @@ using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
 using CounterStrikeSharp.API.Modules.Commands;
 using CounterStrikeSharp.API.Modules.Cvars;
+using Microsoft.Extensions.Logging;
 
 namespace PlaytestPlugin
 {
@@ -15,20 +16,13 @@ namespace PlaytestPlugin
         {
             StartDemo();
             isMatchStarted = true;
-
-            Console.WriteLine("[PlaytestPlugin] Match started!");
+            Logger.LogInformation("[PlaytestPlugin] Match started!");
         }
 
         public void EndMatch()
         {
             isMatchStarted = false;
-
-            if (isDemoRecording)
-            {
-                EndDemo();
-            }
-
-            Console.WriteLine("[PlaytestPlugin] Match ended!");
+            Logger.LogInformation("[PlaytestPlugin] Match ended!");
         }
     }
 
