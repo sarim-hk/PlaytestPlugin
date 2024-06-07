@@ -110,7 +110,7 @@ namespace PlaytestPlugin
                 using var fileContent = new StreamContent(fileStream);
                 fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
 
-                var request = new HttpRequestMessage(HttpMethod.Post, "TEST")
+                var request = new HttpRequestMessage(HttpMethod.Post, demoUploadURL)
                 {
                     Content = fileContent
                 };
