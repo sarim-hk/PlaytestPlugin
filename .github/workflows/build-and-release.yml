@@ -34,19 +34,16 @@ jobs:
     - name: Create ZIP file
       run: |
         cd PlaytestPlugin
-        mkdir -p release/addons/counterstrikesharp/plugins/PlaytestPlugin
-        cp -r cfg release/
+        mkdir -p PlaytestPlugin/addons/counterstrikesharp/plugins/PlaytestPlugin
+        cp -r cfg PlaytestPlugin/
         cp -r bin/Release/net8.0/* release/addons/counterstrikesharp/plugins/PlaytestPlugin
-        zip -r PlaytestPlugin-${{ github.event.inputs.version }}.zip release
+        zip -r PlaytestPlugin-${{ github.event.inputs.version }}.zip PlaytestPlugin
   
     - name: Upload Release
       uses: actions/upload-artifact@main
       with:
-        name: release
+        name: PlaytestPlugin
         path: PlaytestPlugin
-
-    - name: List contents of Release directory
-      run: ls -la PlaytestPlugin
 
     - name: Create Release
       uses: actions/create-release@main
